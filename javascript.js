@@ -19,6 +19,9 @@ btn.addEventListener("click", () => {
 
     // adding value to elements and adding children
     value = input.value;
+    if (value == null || value == ''){
+        return;
+    }
     value = capitalizePhrase(value);
     input.value = '';
     span.innerText = value;
